@@ -1,0 +1,20 @@
+<section class="py-4">
+  <div class="container">
+    <h2 class="mb-3" style="font-family:Poppins; font-weight:600">Shop by Category</h2>
+    <div class="row g-3">
+      {% for g in ethererp_categories %}
+      <div class="col-6 col-md-3">
+        <a href="{{ g.route }}" class="card product-card h-100">
+          <img src="{{ g.image or '/assets/ethererp_theme/images/placeholder.svg' }}" class="card-img-top" alt="{{ g.name }}">
+          <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between">
+              <strong class="text-truncate">{{ g.name }}</strong>
+              {% if g.count %}<span class="badge">{{ g.count }}</span>{% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+{% extends "templates/web.html" %}
+{% block header %}{% include "ethererp_theme/templates/includes/ethererp_navbar.html" %}{% endblock %}
+{% block page_content %}
+<section class="py-5" style="min-height:60vh">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card p-4 p-md-5">
+          <div class="text-center mb-4">
+            <img src="{{ ethererp_logo }}" alt="{{ ethererp_brand }}" style="height:48px">
+            <h1 class="mt-3" style="font-family:Poppins; font-weight:700">Sign in to {{ ethererp_brand }}</h1>
+            {% if ethererp_region == "ZA" %}
+              <div class="text-muted small">Region: South Africa ({{ ethererp_currency }})</div>
+            {% elif ethererp_region == "ZW" %}
+              <div class="text-muted small">Region: Zimbabwe ({{ ethererp_currency }})</div>
+            {% endif %}
+          </div>
+          {% include "templates/includes/login/login.html" %}
+        </div>
+        <p class="text-center text-muted small mt-3">
+          &copy; {{ frappe.utils.now_datetime().year }} Ethercircuit Solutions • Powered by EtherErp
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block footer %}{% include "ethererp_theme/templates/includes/ethererp_footer.html" %}{% endblock %}
