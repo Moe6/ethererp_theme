@@ -4,7 +4,7 @@ app_publisher = "Ethercircuit Solutions"
 app_description = "Brand + UI for EtherErp (Circuit Auto) web presence"
 app_icon = "octicon octicon-paintcan"
 app_color = "#0070B8"
-app_email = "support@ethercircuit.co.za"
+app_email = "info@ethercircuit.co.za"
 app_license = "MIT"
 
 # Website assets
