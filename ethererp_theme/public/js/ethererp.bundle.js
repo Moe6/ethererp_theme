@@ -17,6 +17,11 @@
     var host = (location && location.host ? location.host.toLowerCase() : "");
     var isShop = host.indexOf("shop.circuitauto") !== -1;
     
+    // Add shop class to body for red styling
+    if (isShop) {
+      document.body.classList.add('shop-circuitauto');
+    }
+    
     // Set favicon for website
     var favicon = isShop
       ? "https://www.ethercircuit.co.za/assets/CA_favicon.png"

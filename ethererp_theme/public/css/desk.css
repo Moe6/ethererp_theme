@@ -4,11 +4,40 @@
   --ethererp-primary-dark:#005B97;
 }
 body[data-route^="/app"], body.route-app { background-color: #f6f7fb; }
+
+/* Default navbar (EtherErp - Blue theme) */
 .navbar.navbar-light, .navbar {
   background: #ffffff !important;
   border-bottom: 1px solid #e5e7eb !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
+
+/* Circuit Auto Shop navbar (Red theme) */
+.shop-circuitauto .navbar.navbar-light,
+.shop-circuitauto .navbar {
+  background: #dc2626 !important; /* Red-600 */
+  border-bottom: 1px solid #b91c1c !important; /* Red-700 */
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.1);
+}
+
+.shop-circuitauto .navbar {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar .ethererp-desk-brand .title {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar a,
+.shop-circuitauto .navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar a:hover,
+.shop-circuitauto .navbar .nav-link:hover {
+  color: #fecaca !important; /* Red-200 */
+}
+
 .ethererp-desk-brand { display:flex; align-items:center; gap:10px; }
 .ethererp-desk-brand img { height:28px; width:auto; }
 .ethererp-desk-brand .title { font-weight:700; color:#111827; }

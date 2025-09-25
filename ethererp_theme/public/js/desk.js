@@ -19,6 +19,11 @@
       if (!link.parentNode) document.head.appendChild(link);
     } catch(e) {}
 
+    // Add shop class to body for red topbar styling
+    if (isShop) {
+      document.body.classList.add('shop-circuitauto');
+    }
+
     var navbar = document.querySelector('.navbar .container, .navbar');
     if (navbar && !document.querySelector('.ethererp-desk-brand')) {
       var left = navbar.querySelector('.navbar-brand') || navbar.firstElementChild;
