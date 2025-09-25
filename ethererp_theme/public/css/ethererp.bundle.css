@@ -1,0 +1,79 @@
+/* EtherErp Website Bundle - Main theme styles */
+
+/* Import desk styles for consistency */
+@import url('./desk.css');
+
+/* Website-specific overrides */
+:root {
+  --ethererp-primary: #0070B8;
+  --ethererp-primary-dark: #005B97;
+  --ethererp-secondary: #6B7280;
+  --ethererp-light: #F6F7FB;
+  --ethererp-dark: #111827;
+}
+
+/* Global website styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ethererp-dark);
+  line-height: 1.6;
+}
+
+/* Header/Navbar branding */
+.ethererp-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: var(--ethererp-dark);
+  text-decoration: none;
+}
+
+.ethererp-navbar-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.ethererp-navbar-brand:hover {
+  color: var(--ethererp-primary);
+  text-decoration: none;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--ethererp-primary);
+  border-color: var(--ethererp-primary);
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: var(--ethererp-primary-dark);
+  border-color: var(--ethererp-primary-dark);
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Footer styling */
+.ethererp-footer {
+  background-color: var(--ethererp-light);
+  border-top: 1px solid #E5E7EB;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .ethererp-navbar-brand img {
+    height: 28px;
+  }
+  
+  .card {
+    margin: 1rem;
+    border-radius: 8px;
+  }
+}
