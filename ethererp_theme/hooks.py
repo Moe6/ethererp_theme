@@ -18,6 +18,16 @@ app_include_js  = ["/assets/ethererp_theme/js/desk.js"]
 # Jinja context helpers
 jinja = { "methods": ["ethererp_theme.utils.website_context"] }
 
+# Website Theme fixtures
+fixtures = [
+    {
+        "doctype": "Website Theme",
+        "filters": [
+            ["name", "in", ["ethererp_theme"]]
+        ]
+    }
+]
+
 # Template overrides
 override_website_template = {
     # Webshop pages
