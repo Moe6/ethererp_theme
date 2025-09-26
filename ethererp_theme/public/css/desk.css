@@ -39,8 +39,37 @@ body[data-route^="/app"], body.route-app { background-color: #f6f7fb; }
 }
 
 .ethererp-desk-brand { display:flex; align-items:center; gap:10px; }
-.ethererp-desk-brand img { height:28px; width:auto; }
+.ethererp-desk-brand img { 
+  height: 56px !important; 
+  max-height: 56px !important; 
+  width: auto !important; 
+}
 .ethererp-desk-brand .title { font-weight:700; color:#111827; }
+
+/* Make all navbar logos bigger */
+.navbar .navbar-brand img,
+.navbar.navbar-light .navbar-brand img,
+header.navbar .navbar-brand img {
+  height: 56px !important;
+  max-height: 56px !important;
+  width: auto !important;
+}
+
+/* Give navbar enough space */
+.navbar {
+  min-height: 72px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 576px) {
+  .ethererp-desk-brand img,
+  .navbar .navbar-brand img {
+    height: 40px !important;
+    max-height: 40px !important;
+  }
+}
 .btn-primary, .btn-primary:focus {
   background: var(--ethererp-primary) !important;
   border-color: var(--ethererp-primary) !important;

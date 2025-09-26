@@ -148,3 +148,39 @@ body {
     border-radius: 8px;
   }
 }
+
+/* Logo sizing - Make logos bigger */
+.navbar .navbar-brand img,
+.navbar.navbar-light .navbar-brand img,
+header.navbar .navbar-brand img,
+.ethererp-desk-brand img {
+  height: 56px !important;
+  max-height: 56px !important;
+  width: auto !important;
+}
+
+/* Give the navbar enough space so it doesn't crop */
+header.navbar,
+.navbar.navbar-light.navbar-expand,
+.navbar {
+  min-height: 72px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Keep brand cluster aligned */
+.navbar .navbar-brand,
+.ethererp-desk-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Mobile: slightly smaller to avoid wrapping */
+@media (max-width: 576px) {
+  .navbar .navbar-brand img,
+  .ethererp-desk-brand img {
+    height: 40px !important;
+    max-height: 40px !important;
+  }
+}
