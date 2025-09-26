@@ -176,6 +176,79 @@ header.navbar,
   gap: 10px;
 }
 
+/* Circuit Auto Shop navbar (Red theme) - ONLY for webshop pages */
+.shop-circuitauto .navbar.navbar-light,
+.shop-circuitauto .navbar,
+body[data-site*="shop.circuitauto"] .navbar.navbar-light,
+body[data-site*="shop.circuitauto"] .navbar {
+  background: #dc2626 !important; /* Red-600 */
+  border-bottom: 1px solid #b91c1c !important; /* Red-700 */
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.1);
+}
+
+.shop-circuitauto .navbar,
+body[data-site*="shop.circuitauto"] .navbar {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar .ethererp-desk-brand .title,
+body[data-site*="shop.circuitauto"] .navbar .ethererp-desk-brand .title {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar a,
+.shop-circuitauto .navbar .nav-link,
+body[data-site*="shop.circuitauto"] .navbar a,
+body[data-site*="shop.circuitauto"] .navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.shop-circuitauto .navbar a:hover,
+.shop-circuitauto .navbar .nav-link:hover,
+body[data-site*="shop.circuitauto"] .navbar a:hover,
+body[data-site*="shop.circuitauto"] .navbar .nav-link:hover {
+  color: #fecaca !important; /* Red-200 */
+}
+
+/* Fix dropdown menus in red topbar */
+.shop-circuitauto .dropdown-menu,
+body[data-site*="shop.circuitauto"] .dropdown-menu {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item,
+body[data-site*="shop.circuitauto"] .dropdown-menu .dropdown-item {
+  color: #333333 !important;
+  background: transparent !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item:hover,
+body[data-site*="shop.circuitauto"] .dropdown-menu .dropdown-item:hover {
+  color: #0070B8 !important;
+  background: #f6f7fb !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item:focus,
+body[data-site*="shop.circuitauto"] .dropdown-menu .dropdown-item:focus {
+  color: #0070B8 !important;
+  background: #f6f7fb !important;
+}
+
+/* Ensure regular ERPNext navbar has dark text */
+.navbar.navbar-light .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link,
+.navbar .nav-link {
+  color: #333333 !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .nav-link:hover {
+  color: #0070B8 !important;
+}
+
 /* Mobile: slightly smaller to avoid wrapping */
 @media (max-width: 576px) {
   .navbar .navbar-brand img,

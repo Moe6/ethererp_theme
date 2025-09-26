@@ -38,6 +38,28 @@ body[data-route^="/app"], body.route-app { background-color: #f6f7fb; }
   color: #fecaca !important; /* Red-200 */
 }
 
+/* Fix dropdown menus in red topbar */
+.shop-circuitauto .dropdown-menu {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item {
+  color: #333333 !important;
+  background: transparent !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item:hover {
+  color: #0070B8 !important;
+  background: #f6f7fb !important;
+}
+
+.shop-circuitauto .dropdown-menu .dropdown-item:focus {
+  color: #0070B8 !important;
+  background: #f6f7fb !important;
+}
+
 .ethererp-desk-brand { display:flex; align-items:center; gap:10px; }
 .ethererp-desk-brand img { 
   height: 56px !important; 
@@ -60,6 +82,19 @@ header.navbar .navbar-brand img {
   min-height: 72px !important;
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+}
+
+/* Ensure regular ERPNext navbar has dark text */
+.navbar.navbar-light .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link,
+.navbar .nav-link {
+  color: #333333 !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .nav-link:hover {
+  color: #0070B8 !important;
 }
 
 /* Mobile responsive */

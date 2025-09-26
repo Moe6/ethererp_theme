@@ -20,6 +20,9 @@
     // Add shop class to body for red styling
     if (isShop) {
       document.body.classList.add('shop-circuitauto');
+    } else {
+      // Remove shop class if not on webshop
+      document.body.classList.remove('shop-circuitauto');
     }
     
     // Set favicon for website
